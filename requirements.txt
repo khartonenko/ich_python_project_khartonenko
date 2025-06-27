@@ -1,0 +1,5 @@
+pymysql
+pymongo
+tabulate
+rich
+tzdata
