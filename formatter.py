@@ -8,12 +8,6 @@ console = Console()
 def print_films(films):
     """
     Выводит список фильмов в виде таблицы с помощью библиотеки Rich.
-
-    Аргументы:
-    films (list): список словарей с полями 'title', 'release_year', 'description'
-
-    Возвращает:
-    None
     """
     if not films:
         console.print("[bold red]❌ Nothing found.[/bold red]")
@@ -37,12 +31,6 @@ def print_films(films):
 def print_top_keywords(keywords):
     """
     Выводит таблицу с самыми популярными ключевыми словами.
-
-    Аргументы:
-    keywords (list): список кортежей ('слово', количество)
-
-    Возвращает:
-    None
     """
     if not keywords:
         console.print("[bold yellow]⚠️ No data.[/bold yellow]")
@@ -62,12 +50,6 @@ def print_top_keywords(keywords):
 def print_last_queries(queries):
     """
     Показывает последние поисковые запросы из MongoDB.
-
-    Аргументы:
-    queries (list): список словарей с полями 'timestamp', 'search_type', 'params', 'results_count'
-
-    Возвращает:
-    None
     """
     if not queries:
         console.print("[bold yellow]⚠️ No recent queries found.[/bold yellow]")

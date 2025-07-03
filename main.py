@@ -1,4 +1,3 @@
-# Импортируем нужные функции из других файлов
 from mysql_connector import (
     search_by_keyword,
     get_genres,
